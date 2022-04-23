@@ -1,0 +1,91 @@
+main
+{
+    justify-content: space-around;
+}
+
+.contato-texto
+{
+	max-width: 475px;
+}
+
+.contato-texto h2
+{
+	font-weight: 100;
+	font-size: 0.75rem;
+	color: var(--cinzaEscuro);
+}
+
+.contato-texto p
+{
+	margin: 2vh 0 3vh;
+	text-shadow: 1px 1px 0 var(--cinzaClaro);
+}
+
+.contato-texto p strong
+{
+	text-decoration: underline;
+}
+
+.observacao
+{
+    font-size: 0.8rem;
+    color: red;
+}
+
+.contato-links a
+{
+    width: 300px;
+    border-radius: 50%;
+    margin: 20px;
+    opacity: 1;
+    transition: opacity 500ms ease;
+}
+
+img
+{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.contato-links
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contato-links a:hover
+{
+    opacity: 0.7;
+}
+
+@media screen and (min-height: 1080px)
+{
+	#bolaBaixa
+	{
+		position: absolute;
+	}
+}
+
+@media screen and (max-width: 1600px)
+{
+    main
+    {
+        justify-content: center;
+    }
+
+	.contato-texto
+	{
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 825px)
+{
+
+    .contato-links a
+    {
+        width: 30vw;
+        min-width: 150px;
+    }
+}
